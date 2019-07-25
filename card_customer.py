@@ -17,3 +17,10 @@ dict1 = {
 df = pd.DataFrame(dict1)
 
 print(df)
+
+combine_df = pd.DataFrame({
+
+    'day': samsong_df['요일'],
+    'samsong': samsong_df['문화생활비'],
+    'hyundee': hyundee_df['문화생활비']
+})
